@@ -32,7 +32,7 @@ View(pwt8.0)                                   #Visualiza os dados na tabela pwt
 
                                    #Extraindo dados de tabelas e renomeando colunas
 
-br <- subset(pwt8.0, country=="Brazil", select = c("rgdpna","avh","xr"))  #Cria a tabela "br" com dados das linhas que assumem o valor country igua a Brazil, selecionando as colunas cujas variáveis são "rgdpna" (PIB), "avh" (TRABALHO)  e "xr" (CÂMBIO)
+br <- subset(pwt8.0, country=="Brazil", select = c("rgdpna","avh","xr"))  #Cria a tabela "br" com dados das linhas que assumem o valor "country" (país) igual a "Brazil", selecionando as colunas cujas variáveis são "rgdpna" (PIB), "avh" (TRABALHO)  e "xr" (CÂMBIO)
 colnames(br) <-  c("PIB","Trabalho","Câmbio")  #Renomeia as colunas para PIB, Trabalho e Câmbio
 
                                    #Criando Gráficos
